@@ -1,10 +1,10 @@
-package com.example.sofkareto;
+package com.example.retosoftka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SofkaRetoApplicationTests {
+class RetoSoftkaApplicationTests {
 
 	@Test
 	void contextLoads() {

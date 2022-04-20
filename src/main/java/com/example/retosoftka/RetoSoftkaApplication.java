@@ -1,13 +1,13 @@
-package com.example.sofkareto;
+package com.example.retosoftka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SofkaRetoApplication {
+public class RetoSoftkaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SofkaRetoApplication.class, args);
+		SpringApplication.run(RetoSoftkaApplication.class, args);
 	}
 
 }

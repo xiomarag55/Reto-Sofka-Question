@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Datos de la Categoría</h1>
+<a th:href="@{/}">Regresar</a>
+<br/>
+<form th:action="@{/guardar}" method="post" th:object="${categoria}">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" th:field="*{nombre}"/>
+    <label for="dificultad">Dificultad:</label>
+    <input type="number" name="dificultad" th:field="*{dificultad}"/>
+    <br/>
+    <input type="submit" name="guardar" value="Guardar"/>
+</form>
+</body>
+</html>

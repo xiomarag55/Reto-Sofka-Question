@@ -1,26 +1,22 @@
-package com.example.retosoftka.model.entity;
+package com.example.retosoftka.model.dto;
 
-import javax.persistence.*;
+import com.example.retosoftka.model.entity.Categoria;
 
-@Entity
-@Table
-public class Categoria {
+import java.io.Serializable;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CategoriaDto implements Serializable {
+
     private Long id;
-
-    @Column
     private String nombre;
-
-    @Column
     private int dificultad;
 
-    public Categoria() {
+    public CategoriaDto() {
     }
 
-    public Categoria(Long id) {
-        this.id = id;
+    public CategoriaDto(Categoria categoria) {
+        this.id = categoria.getId();
+        this.nombre = categoria.getNombre();
+        this.dificultad = categoria.getDificultad();
     }
 
     public Long getId() {
